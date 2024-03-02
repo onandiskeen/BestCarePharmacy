@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Best Care Pharmacy | Prescription</title>
+    <link rel="shortcut icon" type="image/png" href="./img/icons8-pharmacy-shop-48.png">
+
+
+    <style>
+        h2 {
+            font-size: 50px;
+            text-align: center;
+            background-color: powderblue;
+            color: white;
+        }
+
+        .form {
+            padding: 40px;
+            justify-content: center;
+        }
+
+        .forminfo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .forminfo label {
+            flex: 1;
+        }
+
+        .forminfo input {
+            flex: 1;
+        }
+
+        .finalinfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 19px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img onclick="location.href='index.html'" class="logopic" src="./img/best care.png" alt="">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li ><a class="nav-link" href="product.html">Product</a></li>
+                <li ><a class="nav-link" href="./testing/blog.html">Blog</a></li>
+                <li ><a class="nav-link" href="contact.html">Contact</a></li>
+                <li ><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <img onclick="document.getElementById('id01').style.display='flex'" class="loginpic" title="Press to Login" src="./img/user.png" alt="">
+            <img class="loginpic" src="./img/shopping-cart.png" alt="">
+        </div>
+    </header>
+
+    <h2>Prescription Drugs</h2>
+
+    <main class="form">
+
+        <form>
+            <div class="forminfo">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="John"><br>
+            </div>
+            <div class="forminfo">
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+            </div>
+            <div class="forminfo">
+                <label for="telephone">Phone Number:</label><br>
+                <input type="text" id="telephone" name="telephone" placeholder="*** *** ****"><br>
+            </div>
+            <div class="forminfo">
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" placeholder="Enter email here"><br>
+            </div>
+            <div class="forminfo">
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address" placeholder="123 Lime Tree Ln, Montego Bay"><br>
+            </div>
+            <div class="forminfo">
+                <label for="directions">Insurance Number:</label><br>
+                <input type="text" id="insurance" name="insurance" placeholder="Directions and major land marks"><br>
+            </div>
+            <div class="forminfo">
+                <label for="provider">Insurance Provider:</label><br>
+                <input type="text" id="provider" name="provider" placeholder="Provider"><br>
+            </div>
+            <div class="forminfo">
+                <label for="insurance">Insurance Number:</label><br>
+                <input type="text" id="insurance" name="insurance" placeholder="*** *** ****"><br><br>
+            </div>
+    </main>
+
+    <section class="finalinfo">
+        <p>How would you like your order?.</p>
+           <form action="upload.php" method="post" enctype="multipart/form-data">
+           
+            <label for="pickup">Pick-Up</label>
+            <input type="radio" id="pickup" name="gender" value="male"><br>
+            
+            <label for="delivery">Delivery</label>
+            <input type="radio" id="pickup" name="delivery" value="delivery"><br><br>
+            
+           Upload image of Prescription and Health card:
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload Image" name="submit">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+          </form>
+
+          <br>
+        <p>We will return a quote for your prescription and delivery within one hour.</p>
+
+        <p>Thanks for choosing Best Care Pharmacy.</p>
+        <p>Delivery schedule will be sent with a quote..</p>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Best Care Pharmacy</h3>
+            <p>Visit our various social Media Platforms to find out more about our pharmacy</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 Best Care Pharm. designed by <span>My Group</span></p>
+        </div>
+    </footer> 
+
+</body>
+</html>

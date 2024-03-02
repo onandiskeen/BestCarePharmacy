@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Best Care Pharmacy</title>
+    <link rel="shortcut icon" type="image/png" href="./img/icons8-pharmacy-shop-48.png">
+
+    <style>
+
+        .main {
+            display: flex;
+        }
+
+        .columns {
+          float: left;
+          width: 33.3%;
+          padding: 8px;
+        }
+        
+        .price {
+          list-style-type: none;
+          border: 1px solid #eee;
+          margin: 0;
+          padding: 0;
+          -webkit-transition: 0.3s;
+          transition: 0.3s;
+        }
+        
+        .price:hover {
+          box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+        }
+        
+        .price .header {
+          background-color: #111;
+          color: white;
+          font-size: 25px;
+        }
+        
+        .price li {
+          border-bottom: 1px solid #eee;
+          padding: 20px;
+          text-align: center;
+        }
+
+        .product:hover {
+            cursor: pointer;
+            background-color: #01ffa2;
+        }
+        
+        .price .grey {
+          background-color: #eee;
+          font-size: 20px;
+        }
+        
+        .button {
+          background-color: #04AA6D;
+          border: none;
+          color: white;
+          padding: 10px 25px;
+          text-align: center;
+          text-decoration: none;
+          font-size: 18px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+          .columns {
+            width: 100%;
+          }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img onclick="location.href='index.html'" class="logopic" src="./img/best care.png" alt="">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li ><a class="nav-link" href="product.html">Product</a></li>
+                <li ><a class="nav-link" href="./testing/blog.html">Blog</a></li>
+                <li ><a class="nav-link" href="contact.html">Contact</a></li>
+                <li ><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <img onclick="document.getElementById('id01').style.display='flex'" class="loginpic" title="Press to Login" src="./img/user.png" alt="">
+            <img class="loginpic" src="./img/shopping-cart.png" alt="">
+        </div>
+    </header>
+
+    <h2 style="text-align:center">Product Listing</h2>
+        <p style="text-align:center">Over the counter and Cosmentic Items</p>
+
+    <section class="main">
+
+        
+        <div class="columns">
+          <ul class="price">
+            <li class="header">Vitamins</li>
+            <li class="grey"> $2000 </li>
+            <li class="product" id="v1" onclick="document.getElementById('v1').style.backgroundColor = '#04AA6D';">Sundown Vitamin A</li>
+            <li class="product" id="v2" onclick="document.getElementById('v2').style.backgroundColor = '#04AA6D';">Sundown Vitamin B</li>
+            <li class="product" id="v3" onclick="document.getElementById('v3').style.backgroundColor = '#04AA6D';">Sundown Vitamin B6</li>
+            <li class="product" id="v4" onclick="document.getElementById('v4').style.backgroundColor = '#04AA6D';">Sundown Vitamin B12</li>
+            <li class="product" id="v5" onclick="document.getElementById('v5').style.backgroundColor = '#04AA6D';">Sundown Vitamin C</li>
+            <li class="product" id="v6" onclick="document.getElementById('v6').style.backgroundColor = '#04AA6D';">Sundown Vitamin D</li>
+            <li class="product" id="v7" onclick="document.getElementById('v7').style.backgroundColor = '#04AA6D';">Sundown Vitamin E</li>
+            <li class="grey"><a href="product.html" class="button">Add To Cart</a></li>
+          </ul>
+        </div>
+        
+        <div class="columns">
+          <ul class="price">
+            <li class="header" style="background-color:#04AA6D">Cantu Hair Products</li>
+            <li class="grey">$3000</li>
+            <li class="product" id="c1" onclick="document.getElementById('c1').style.backgroundColor = '#04AA6D';">Cantu Avocado Curl Activator Cream, 12 oz.</li>
+            <li class="product" id="c2" onclick="document.getElementById('c2').style.backgroundColor = '#04AA6D';">Cantu Shea Butter Leave-In Conditioning Repair Cream, 16 fl oz</li>
+            <li class="product" id="c3" onclick="document.getElementById('c3').style.backgroundColor = '#04AA6D';">Cantu Shea Butter Coconut Curling Cream for Natural Hair, 12 oz</li>
+            <li class="product" id="c4" onclick="document.getElementById('c4').style.backgroundColor = '#04AA6D';">Cantu Men's Styling Pomade, 8 oz</li>
+            <li class="grey"><a href="product.html" class="button">Add to Cart</a></li>
+          </ul>
+        </div>
+        
+        <div class="columns">
+          <ul class="price">
+            <li class="header">Maternal Essentials</li>
+            <li class="grey"> Prenatal and Postnatal </li>
+            <li class="product"id="p1" onclick="document.getElementById('p1').style.backgroundColor = '#04AA6D';">Ovulation Tests $250</li>
+            <li class="product"id="p2" onclick="document.getElementById('p2').style.backgroundColor = '#04AA6D';">HCG Pregnancy Tests $275</li>
+            <li class="product"id="p3" onclick="document.getElementById('p3').style.backgroundColor = '#04AA6D';">Maternity Pads $$1200</li>
+            <li class="product"id="p4" onclick="document.getElementById('p4').style.backgroundColor = '#04AA6D';">Baby Monitor $5000</li>
+            <li class="grey"><a href="product.html" class="button">Add to Cart</a></li>
+          </ul>
+        </div>
+    </section>
+
+    <div class="ordernow">
+      <img onclick="location.href='prescription.html'" src="./img/create-order--v2.png" alt="Create Order" title="Get your Prescription">
+  </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Best Care Pharmacy</h3>
+            <p>Visit our various social Media Platforms to find out more about our pharmacy</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 Best Care Pharm. designed by <span>My Group</span></p>
+        </div>
+    </footer>    
+        
+        </body>
+        </html>

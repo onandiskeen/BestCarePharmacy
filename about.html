@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Best Care Pharmacy | About</title>
+    <link rel="shortcut icon" type="image/png" href="./img/icons8-pharmacy-shop-48.png">
+
+    <style>     
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 25%;
+          padding: 10px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .names {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .names p {
+            font-size: 20px;
+            margin-left: 15px;
+            flex: 1;
+        }
+
+        </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img onclick="location.href='index.html'" class="logopic" src="./img/best care.png" alt="">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li ><a class="nav-link" href="product.html">Product</a></li>
+                <li ><a class="nav-link" href="./testing/blog.html">Blog</a></li>
+                <li ><a class="nav-link" href="contact.html">Contact</a></li>
+                <li ><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <img onclick="document.getElementById('id01').style.display='flex'" class="loginpic" title="Press to Login" src="./img/user.png" alt="">
+            <img class="loginpic" src="./img/shopping-cart.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="background">
+                <h1>About us</h1>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="information">
+                <p>
+                    Best Care Pharmacy was opened on November 16, 1978 by James and Arianna Brown. Our main goal is to offer our customers the best customer service and the prescriptions they need in a professional manner. We also keep our doors open late so our customers dont have to worry about getting their medication.
+                </p>
+            </div>
+            <div class="pharmacyworker">
+                <img src="./img/pharmgirl.png" alt="">
+            </div>
+        </section>
+
+        <section class="teampic">
+            <div style="text-align:center">
+                <h2 style="font-size: 50px;">Meet our team</h2>
+              </div>
+              
+              <div class="row">
+                <div class="column">
+                  <img src="./img/pharmpic1.jpg" alt="James and Alissa" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="./img/pharmpic2.jpg" alt="Allison" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="./img/pharmpic3.jpg" alt="John" style="width:100%" >
+                </div>
+                <div class="column">
+                  <img src="./img/pharmpic4.jpg" alt="Reyna" style="width:100%">
+                </div>
+              </div>
+
+              <div' class="names">
+                  <p>James and Alissa</p>
+                  <p>Allison</p>
+                  <p>John</p>
+                  <p>Reyna</p>
+              </div>
+              
+              
+        </section>
+    </main>
+
+    <div class="ordernow">
+        <img onclick="location.href='prescription.html'" src="./img/create-order--v2.png" alt="Create Order" title="Get your Prescription">
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Best Care Pharmacy</h3>
+            <p>Visit our various social Media Platforms to find out more about our pharmacy</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 Best Care Pharm. designed by <span>My Group</span></p>
+        </div>
+    </footer>
+    
+</body>

@@ -1,0 +1,454 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    background: #c36cbb;
+    width: 100%;
+    height: 9vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container, .nav-links, .login{
+    display: flex;
+}
+
+.logo-container{
+    flex: 1;
+    justify-content: center;
+}
+
+.logopic {
+    cursor: pointer;
+    max-width: 50%;
+    height:auto;
+}
+
+nav{
+    flex: 2;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+    color: #000;
+    text-decoration: none;
+}
+
+.login{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.loginpic{
+    
+    max-width:13%;
+    height:auto;
+    cursor: pointer;
+
+}
+
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+    
+}
+
+.introduction{
+    flex: 1;
+}
+
+.intro-text h1 {
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+    margin: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+
+.cta{
+    padding: 50px, 0px, 0px, 0px;
+}
+
+.cta-select{
+    border: 2px solid #c36cbb;
+    background:  transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cover{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.cover img{
+    height: 60vh;
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+.bg-modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.modal-content{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+
+}
+
+.modal-content img{
+    max-width:17%;
+    height:auto;
+}
+
+.myButton{
+    background-color:#c36cbb;
+	border-radius:28px;
+	border:1px solid white;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-size:17px;
+	padding:4px 31px;
+
+
+}
+
+.myButton:hover{
+    border: 2px solid #c36cbb;
+    background:  transparent;
+    color: #c36cbb;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+
+input{
+    width: 70%;
+    display: block;
+    border-radius: 25px;
+    padding: 9px;
+    margin: 6px auto;
+}
+
+.background {
+    display: flex;
+    height: 60vh;
+    background-image: url('./img/pharmacy.gif');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.background h1 {
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: #c36cbb;
+}
+
+.info {
+
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.information {
+
+    flex: 1;
+    margin: 5px;
+    font-size: 22px;
+}
+
+.pharmacyworker {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.pharmacyworker img {
+    width: 90%;
+}
+hr.dashed {
+    border-top: 3px dashed #c36cbb;
+  }
+
+.contact {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.contact-in {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px #666;
+}
+
+.contact-map {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+.contact-form {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    text-align: center;
+}
+
+.contact-form h1 {
+    margin-bottom: 10px;
+}
+
+.contact-form-txt {
+    width: 100%;
+    height: 40px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.contact-form-textarea {
+    width: 100%;
+    height: 130px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.slideshow {
+    width: 100%;
+}
+
+.mySlides {
+    height: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #c36cbb;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.mySlides {
+    cursor: pointer;
+}
+
+.sumn {
+    background: url("img/wooden.jpg");
+    display: flex;
+    padding: 47px;
+}
+  
+  .opening {
+    background: url("./img/white.jpg");
+    background-size: cover;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 22%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px #666;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .openwords {
+      display: flex;
+      justify-content: center;
+  }
+
+  .openwords h2 {
+      text-align: center;
+      color: #000;
+  }
+
+  .ordernow {
+    margin-right: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.ordernow:hover {
+    cursor: pointer;
+}
+
+.ordernow img {
+    max-width: 80px;
+}
+  
+
+
+  

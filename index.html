@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Best Care Pharmacy</title>
+    <link rel="shortcut icon" type="image/png" href="./img/icons8-pharmacy-shop-48.png">
+
+    <style>
+
+       .paralax {
+           background: url("./img/pills.jpg") 
+           repeat fixed 100%;
+       } 
+
+       .paralax-inner {
+           padding-top: 5%;
+           padding-bottom: 5%;
+       }
+
+       .paralax-inner h1 {
+           text-align: center;
+           font-size: 500%;
+           -webkit-text-stroke-width: 0.4px;
+           -webkit-text-stroke-color: #c36cbb;
+           color: #fff;
+           letter-spacing: 3px;
+       }
+       
+       .paralax-inner h2 {
+            text-align: center;
+            color: #fff;
+            letter-spacing: 3px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img onclick="location.href='index.html'" class="logopic" src="./img/best care.png" alt="">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li ><a class="nav-link" href="product.html">Product</a></li>
+                <li ><a class="nav-link" href="./testing/blog.html">Blog</a></li>
+                <li ><a class="nav-link" href="contact.html">Contact</a></li>
+                <li ><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <img onclick="document.getElementById('id01').style.display='flex'" class="loginpic" title="Press to Login" src="./img/user.png" alt="">
+            <img class="loginpic" src="./img/shopping-cart.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="slideshow">
+            <img class="mySlides" src="./img/pharmguy1.jpg" style="width:100%">
+            <img onclick="location.href='product.html'" title="Click for more information" class="mySlides" src="./img/same-day-delivery1.jpg" style="width:100%">
+            <img title="Click for more information" class="mySlides" src="./img/online.jpg" style="width:100%">
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          
+          <script>
+            var myIndex = 0;
+            carousel();
+          
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 6000); // Change image every  seconds
+            }
+          </script>
+
+        <section class="presentation">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1>Your health comes first</h1>
+                    <p>At Best Care Pharmacy you get fast and efficient service with discounts on all prescriptions. We also offer over the counter drugs and free delivery</p>
+                </div>
+                <div class="cta">
+                    <button onclick="location.href='about.html'" class="cta-select">Find Out More</button>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="./img/PngItem_3997666.png" alt="">
+            </div>
+        </section>
+
+        <div id="id01" class="bg-modal">
+            <div class="modal-content">
+                <img src="./img/user.png" alt="">
+
+                <div onclick="document.getElementById('id01').style.display='none'"class="close">+</div>
+
+                <form action="">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button class="myButton" type="submit">Login</button>
+                </form>
+                
+            </div>
+        </div>
+
+        <section class="paralax">
+            <div class="paralax-inner">
+                <h1>OUR MISSION</h1>
+                <h2> To provide safe, high quality patient care in an atmosphere of professionalism, respect, and effective communication.</h2>
+            </div>
+        </section>
+
+
+        <section class="sumn">
+            <div class="opening">
+                <div class="openwords">
+                </div>      
+            </div>
+        </section>
+    </main>
+
+    <div class="ordernow">
+        <img onclick="location.href='prescription.html'" src="./img/create-order--v2.png" alt="Create Order" title="Get your Prescription">
+    </div>
+    
+    
+
+    <footer>
+        <div class="footer-content">
+            <h3>Best Care Pharmacy</h3>
+            <p>Visit our various social Media Platforms to find out more about our pharmacy</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 Best Care Pharm. designed by <span>My Group</span></p>
+        </div>
+    </footer>
+</body>
+</html>

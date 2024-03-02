@@ -1,0 +1,118 @@
+.healthtip {
+  background-color: powderblue;
+  padding-bottom: 25px;
+}
+ 
+.maininfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maininfo img {
+  border-radius: 8px;
+  width: 35%;
+  height: auto;
+  margin-right: 25px;
+}
+
+.maininfo iframe {
+  border-radius: 8px;
+}
+
+
+.healthinfo {
+  display: flex;
+  background: rgba(0, 0, 0, 0.07);
+}
+
+.healthinfo p {
+  margin: 45px;
+  font-size: 22px;
+}
+
+.p1 {
+  flex: 1;
+}
+
+.p2 {
+  flex: 1;
+}
+
+.notice {
+  text-align: center;
+  padding-bottom: 8px;
+  background: rgba(0, 0, 0, 0.07);
+}
+
+.notice img {
+  width: 50%;
+}
+
+.notice ul {
+  list-style-type: none;
+}
+
+.notice li {
+  margin: 0 0 23px 0;
+  font-size: 25px;
+}
+
+.notice h2 {
+  font-size: 50px;
+}
+
+.heading {
+  background: url("../img/US\ State\ of\ the\ Union\ COVID-19\ now.jpg");
+  padding: 100px;
+}
+
+.covidvisuals {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.covidvisuals img {
+  border-radius: 8px;
+  width: 45%;
+  height: auto;
+  margin-right: 25px;
+}
+
+.covidvisuals iframe {
+  border-radius: 8px;
+}
+
+.wearmask {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.covidinfo {
+  background: rgba(0, 0, 0, 0.07);
+  padding-bottom: 25px;
+}
+
+.covidvaccine{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px #666;
+}
+
+.covidvaccine img {
+  position: absolute;
+  margin-top: 8px;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+}
