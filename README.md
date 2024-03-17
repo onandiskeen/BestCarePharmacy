@@ -1,3 +1,5 @@
+<img src="https://github.com/onandiskeen/Minesweeper/assets/46636543/b3a43983-2b59-448f-8a58-dce935bccd50" alt="java-logo-1" width="100" height="100"> 
+
 # BestCare Pharmacy
 
 Welcome to BestCare Pharmacy's GitHub repository! This basic HTML and CSS website template showcase our pharmacy's services and offerings. With clean design and simple navigation, users can easily explore our services, learn about us, and find contact information. 
